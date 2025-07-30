@@ -1,82 +1,53 @@
-# Lightweight React Template for KAVIA
+# Personal Notes Manager Frontend
 
-This project provides a minimal React template with a clean, modern UI and minimal dependencies.
+A clean, minimalistic React app for managing your personal notes with folders/tags, powerful text editing, and instant search. 
 
 ## Features
 
-- **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
-- **Modern UI**: Clean, responsive design with KAVIA brand styling
-- **Fast**: Minimal dependencies for quick loading times
-- **Simple**: Easy to understand and modify
+- **Create/Edit/Delete Notes:** Intuitive note editor, real-time updates.
+- **Organize with Folders:** Sidebar lets you switch and create new folders/tags.
+- **Search:** Instantly filter notes with the search bar.
+- **List & Detail View:** Left for navigation, right for editing/viewing.
+- **Minimalistic Style:** Brand colors, no UI library, fully responsive.
+- **Lightweight:** Optimized with minimal dependencies and fast load.
 
-## Getting Started
+## Layout
 
-In the project directory, you can run:
+- **Sidebar (Left):** Folders/Tags
+- **Main Notes List:** Search + note items
+- **Editor/Viewer Panel:** Compose and read notes
 
-### `npm start`
+## Brand Colors
 
-Runs the app in development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-### `npm test`
-
-Launches the test runner in interactive watch mode.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-## Customization
-
-### Colors
-
-The main brand colors are defined as CSS variables in `src/App.css`:
+Main palette is set in `src/App.css` (customize!):
 
 ```css
 :root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
+  --primary: #1976D2;
+  --secondary: #424242;
+  --accent: #FFD600;
 }
 ```
 
-### Components
+## Usage
 
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
+- `npm start` — Local dev server at http://localhost:3000
+- `npm test` — Runs UI tests
+- `npm run build` — Production build
 
-Common components include:
-- Buttons (`.btn`, `.btn-large`)
-- Container (`.container`)
-- Navigation (`.navbar`)
-- Typography (`.title`, `.subtitle`, `.description`)
+## Customize and Extend
+
+- **Add API Integration:** Replace in-memory data in `src/App.js` with calls to your backend.
+- **Change Colors/Fonts:** Update `src/App.css` variables and font definitions.
+- **Expand Features:** Add markdown support, auth, or dark mode if desired.
+
+## Accessibility
+
+- Keyboard shortcuts:
+  - <kbd>n</kbd> to create a note.
+  - <kbd>e</kbd> to edit current note.
 
 ## Learn More
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[React documentation](https://reactjs.org/)
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
